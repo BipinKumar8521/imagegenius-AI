@@ -1,4 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 import React from "react";
 
 const Home = () => {
@@ -6,7 +7,7 @@ const Home = () => {
     <div>
       <p>Home</p>
 
-      <UserButton afterSignOutUrl="/" />
+      <UserButton afterSignOutUrl="/sign-up" showName />
     </div>
   );
 };
